@@ -41,7 +41,6 @@ if(!require("readr")) install.packages("readr")
 library(readr)
 
 write_lines(llm_completion_content,"llm_output.md"))
-
 ```
 
 
@@ -68,5 +67,4 @@ llm_completion <- claudeR(
                       max_tokens = 100,
                       api_key = anthropic_key
 )
-
 ```
