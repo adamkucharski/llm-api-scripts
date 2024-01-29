@@ -62,7 +62,7 @@ Sys.setenv(ANTHROPIC_API_KEY = "insert_your_key")
 anthropic_key <- Sys.getenv("OPENAI_API_KEY")
 
 llm_completion <- claudeR(
-                      prompt = "What is the capital of France?",
+                      prompt = "insert_user_prompt",
                       model = "claude-2",
                       max_tokens = 100,
                       api_key = anthropic_key
