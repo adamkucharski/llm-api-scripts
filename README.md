@@ -5,7 +5,7 @@ Here are some scripts for interface with common LLM APIs in R
 
 You can get an API key on the [OpenAI platform website](https://platform.openai.com/docs/introduction).
 
-The below shows code using the [{openai} R package](https://irudnyts.github.io/openai/). The model used below is GPT-3.5, but there are a [range of alternative models available](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo), including GPT-4 (for which you just need to set `model = "gpt-4"`. Their website also has more on the [system and user prompts](https://platform.openai.com/docs/guides/prompt-engineering/strategy-write-clear-instructions), which can be thought of as the overall goal/context (system) and specific task/question (user).
+The below shows code using the [{openai} R package](https://irudnyts.github.io/openai/). The model used below is GPT-3.5, but there are a [range of alternative models available](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo), including GPT-4 (for which you just need to set `model = "gpt-4"`). Their website also has more on the [system and user prompts](https://platform.openai.com/docs/guides/prompt-engineering/strategy-write-clear-instructions), which can be thought of as the overall goal/context (system) and specific task/question (user).
 
 ```
 if(!require("openai")) install.packages("openai")
