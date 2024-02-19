@@ -1,21 +1,19 @@
-**Review:**
+- The vignette is well-structured and provides a clear step-by-step guide on how to calculate a static, delay-adjusted estimate of disease severity. It is beneficial for Lucia as it provides practical examples using real-world data, which can help her understand the application of the methods in a real-world context.
 
-The tutorial is well-structured and provides a step-by-step guide on how to calculate a static, delay-adjusted estimate of disease severity. It includes clear explanations of the concepts and functions used, as well as practical examples using real-world data. However, there are areas that could be improved to make it more accessible and useful for Lucia.
+- The use of alerts to highlight important points or warnings is a useful feature that helps Lucia to pay attention to crucial aspects of the analysis. 
 
-**Suggestions for improvements:**
+- The vignette provides a clear explanation of the mathematical concepts behind the calculations. However, Lucia might find it challenging to understand these concepts without a refresher on applied statistics and mathematics. It would be helpful to provide additional resources or references for readers who need to brush up on these concepts.
 
-1. **Clarify technical terms and concepts:** The tutorial uses several technical terms and concepts that may not be familiar to Lucia, such as "static estimate of the severity of an outbreak", "case fatality risk (CFR)", "delay density function", and "maximum-likelihood methods". Providing definitions or explanations of these terms in simpler language would make the tutorial more accessible.
+- The vignette does a good job of explaining the code and the output it produces. However, Lucia might find it difficult to understand some of the code, especially the parts that involve the use of functions from the `cfr` package. It would be beneficial to provide more detailed explanations of these functions and how they work.
 
-2. **Provide more context for the code:** While the tutorial does a good job of explaining what each line of code does, it could provide more context for why certain functions or packages are used. For example, why is the `cfr_static()` function used to calculate the CFR? What does the `estimate_outcomes()` function do, and why is it necessary?
+- The vignette could be improved by providing more context about the data used in the examples. For instance, it would be helpful to explain why the data from the 1976 Ebola outbreak and the COVID-19 pandemic in the U.K. were chosen for the examples. This would help Lucia understand the relevance of these examples to her work.
 
-3. **Include more practical examples:** The tutorial includes two examples, one using data from the 1976 Ebola outbreak and another using data from the COVID-19 pandemic. Including more examples, particularly ones relevant to Lucia's work in Paraguay, would make the tutorial more useful and relatable.
+- The vignette could also be improved by providing more guidance on how to interpret the results of the analysis. For instance, it would be helpful to explain what a high or low case fatality risk (CFR) means in practical terms. This would help Lucia to communicate the results of her analysis to stakeholders and the general public.
 
-4. **Explain the mathematical formulas:** The tutorial includes several mathematical formulas, but does not explain what they mean or how they are used. Providing a step-by-step walkthrough of these formulas, perhaps using one of the examples, would help Lucia understand them better.
+- The vignette could benefit from the inclusion of case studies for different disease types. This would help Lucia to understand how to apply the methods in different contexts and how to translate her field experience into practice. 
 
-5. **Include a summary or conclusion:** The tutorial ends abruptly with the mathematical formulas. Including a summary or conclusion that recaps the main points and provides next steps or further resources would make the tutorial more complete.
+- The vignette could also benefit from the inclusion of exercises or practice problems. This would give Lucia the opportunity to apply what she has learned and reinforce her understanding of the concepts. 
 
-6. **Include a section on interpreting the results:** The tutorial shows how to calculate the CFR, but does not provide guidance on how to interpret the results. Including a section on this would help Lucia apply what she has learned to her work.
+- The vignette could be improved by providing more guidance on how to handle uncertainty in the analysis. For instance, it would be helpful to explain how to account for uncertainty in the distribution parameters and how this might affect the results. 
 
-7. **Provide refreshers on applied statistics and mathematics concepts:** As Lucia has mentioned in her needs, she would benefit from refreshers on applied statistics and mathematics concepts. These could be included as side notes or additional resources.
-
-8. **Include case-studies per disease type:** Lucia has expressed a need for case-studies per disease type. Including these in the tutorial would help her translate her field experience into practice.
+- The vignette could also benefit from the inclusion of a glossary of terms. This would help Lucia to understand the terminology used in the vignette and in the field of outbreak analysis more generally.

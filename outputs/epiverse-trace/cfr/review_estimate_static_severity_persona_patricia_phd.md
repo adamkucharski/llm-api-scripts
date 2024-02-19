@@ -1,17 +1,19 @@
-As Patricia, a PhD student in Infectious Disease Epidemiology, I find this tutorial very useful for my research work. However, there are a few areas that could be improved to make it more accessible for learners like me.
+- The vignette is well-structured and provides a clear step-by-step guide on how to calculate a static, delay-adjusted estimate of disease severity. However, as a beginner in R and someone who is not familiar with the terminal window, Patricia might find the code snippets intimidating. 
 
-1. **Unclear**: The tutorial assumes a certain level of familiarity with R and the specific packages used. As someone who is still learning R, I would appreciate a brief introduction to the packages and their functions. For example, what is the `cfr` package and what does it do? 
+- The use of alerts to highlight important points is useful. However, the alerts could be more effective if they were placed closer to the relevant code snippets. For instance, the alert about using a continuous distribution instead of a discrete one could be placed right after the code snippet where the Gamma distribution is defined.
 
-2. **Useful**: The step-by-step guide on how to calculate the naive and corrected CFR is very helpful. It provides a clear workflow that I can follow and apply to my own data.
+- The vignette could benefit from more explanations about the code. For example, it is not clear what the function `cfr_static()` does and how it works. Patricia, as someone who is still learning R, would appreciate more detailed explanations about the functions used in the vignette.
 
-3. **Difficult**: The mathematical formulas provided are a bit intimidating for me. While I understand the need for them, it would be helpful if there was a more detailed explanation of what each symbol represents and how they are used in the calculations.
+- The vignette uses two different datasets for the examples, which is great for demonstrating the versatility of the methods. However, it might be confusing for beginners like Patricia. It might be more effective to focus on one dataset and go through the entire process with it.
 
-4. **Refinement**: The tutorial could benefit from more explanations and comments within the code. For example, what does the `filter()` function do in the context of this analysis? What are we filtering for?
+- The vignette could also benefit from more explanations about the mathematical formulas. Patricia, as a PhD student in Infectious Disease Epidemiology, would be interested in understanding the mathematical basis of the methods used in the vignette.
 
-**Suggestions for improvements:**
+- The vignette could be improved by providing more context about the data used in the examples. For example, it would be helpful to know more about the 1976 Ebola outbreak and the COVID-19 pandemic in the U.K.
 
-- Include a brief introduction to the packages used in the tutorial. Explain what they do and why they are necessary for this analysis.
-- Provide a more detailed explanation of the mathematical formulas used. This could be in the form of a glossary or a separate section dedicated to explaining each symbol and its role in the calculations.
-- Include more comments within the code to explain what each line does. This will help learners like me understand the workflow better.
-- Consider including a section on troubleshooting common errors. This would be very helpful for beginners who are still getting familiar with R.
-- Include a conclusion summarizing what was learned in the tutorial and how it can be applied to other datasets. This will help reinforce the learning objectives and provide a clear takeaway for the learners.
+Suggestions for improvements:
+
+- Add more explanations about the code snippets, especially the functions used in the vignette.
+- Place the alerts closer to the relevant code snippets.
+- Focus on one dataset for the examples to make the vignette less confusing for beginners.
+- Provide more explanations about the mathematical formulas used in the vignette.
+- Provide more context about the data used in the examples.

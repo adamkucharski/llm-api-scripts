@@ -1,13 +1,25 @@
-As Vania, I find this tutorial very useful and relevant to my work. It provides a clear explanation of how to estimate disease severity while correcting for reporting delays, which is a crucial aspect of my research. However, there are a few areas that could be improved to make the tutorial more accessible and easier to understand for someone like me who is not very familiar with programming.
+- The vignette is well-structured and provides a clear step-by-step guide on how to estimate disease severity while correcting for reporting delays. However, as someone who is new to R and has recently taught herself the language, I found some parts of the vignette challenging to understand. 
 
-1. **Jargon and technical terms**: The tutorial uses a lot of technical terms and jargon that are not explained. For example, terms like "Gamma distributed", "onset-to-death distribution", "ascertainment ratio", and "naive estimator" are used without any explanation. This could be confusing for someone who is not familiar with these terms. I suggest adding a glossary or explanations for these terms to make the tutorial more accessible.
+- The use of jargon and technical terms such as "case fatality risk (CFR)", "reporting delay", "onset-to-death distribution", and "ascertainment ratio" can be confusing for beginners. It would be helpful to have a glossary or a brief explanation of these terms at the beginning of the vignette. 
 
-2. **Assumptions**: The tutorial mentions some assumptions, such as the data on reporting delays from past outbreaks being informative about reporting delays in the current outbreak. However, it does not explain why these assumptions are made or how they might affect the results. I would appreciate more information on this.
+- The vignette assumes that the reader has a good understanding of R and its packages. For example, it uses the _cfr_ package without explaining what it does or how to install it. A brief introduction to the package and instructions on how to install it would be beneficial for beginners. 
 
-3. **Code explanation**: The tutorial provides code snippets but does not explain what each line of code does. As someone who is not very familiar with R, I would find it helpful if the tutorial provided more detailed explanations of the code.
+- The vignette also assumes that the reader is familiar with the data being used. It would be helpful to provide a brief description of the data, its source, and how to access it. 
 
-4. **Use of packages**: The tutorial uses several packages, such as the _cfr_ package and the _epiparameter_ package. However, it does not explain what these packages do or why they are necessary. I would appreciate more information on this.
+- The use of functions such as `cfr_static()` and `estimate_ascertainment()` without explaining their parameters can be confusing. A brief explanation of the parameters and their possible values would be beneficial. 
 
-5. **Practical examples**: The tutorial provides a use case and some examples, but I would find it helpful if there were more practical examples that I could apply to my own research.
+- The vignette could also benefit from more comments in the code to explain what each line does. This would make it easier for beginners to follow along and understand the code. 
 
-In summary, I find this tutorial very useful and relevant, but it could be improved by providing more explanations of technical terms and code, discussing the assumptions made, explaining the use of packages, and providing more practical examples.
+- The vignette could also provide more context on why it's important to estimate disease severity and how it can be used in real-world scenarios. This would help readers understand the practical applications of the methods being taught. 
+
+- The vignette could also benefit from more visualizations to illustrate the concepts being taught. This would make it easier for readers to understand the concepts and follow along with the code. 
+
+Suggestions for improvements:
+
+- Include a glossary or brief explanation of technical terms at the beginning of the vignette.
+- Provide a brief introduction to the _cfr_ package and instructions on how to install it.
+- Provide a brief description of the data, its source, and how to access it.
+- Explain the parameters of the functions being used and their possible values.
+- Include more comments in the code to explain what each line does.
+- Provide more context on why it's important to estimate disease severity and how it can be used in real-world scenarios.
+- Include more visualizations to illustrate the concepts being taught.

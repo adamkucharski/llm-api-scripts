@@ -1,15 +1,23 @@
-As Vania, I find the tutorial very informative and relevant to my field of study. However, there are a few areas that could be improved to make it more accessible and easier to understand.
+- The vignette is well-structured and provides a clear step-by-step guide on how to calculate a static, delay-adjusted estimate of disease severity. This is useful for my research as it provides a practical application of the R programming skills I am learning.
 
-1. **Jargon and Terminology:** The tutorial uses a lot of technical terms and jargon without explaining them. For example, terms like "case fatality risk (CFR)", "Gamma distribution", "delay density function", etc. are used without any explanation. This could be confusing for someone who is not familiar with these terms. A glossary or brief explanation of these terms would be helpful.
+- The use of real-world examples, such as the 1976 Ebola outbreak and the COVID-19 pandemic in the U.K., is helpful in understanding the application of the methods discussed. However, it would be beneficial to have more context or background information about these examples to better understand the data and the implications of the results.
 
-2. **Code Explanation:** While the tutorial provides code snippets, it does not explain what each line of code does. This could make it difficult for someone who is not familiar with R to follow along. Adding comments to the code or providing a brief explanation of what each line does would be beneficial.
+- The use of technical terms and jargon, such as "Gamma distribution", "delay density function", and "maximum-likelihood methods", can be confusing for someone like me who is still learning R and statistical methods. A glossary or explanations of these terms would be helpful.
 
-3. **Data Source:** The tutorial uses data from the 1976 Ebola outbreak and the Covid-19 pandemic, but it does not explain where this data comes from or how it was collected. Providing a link to the data source or explaining how the data was collected would add credibility to the tutorial and allow learners to explore the data on their own.
+- The code chunks are well-annotated and easy to follow. However, as someone who is still learning R, it would be beneficial to have more explanation about what each line of code is doing. This would help me understand the process better and apply it to my own research.
 
-4. **Visualizations:** Although visualizations are not shown in the R markdown, it would be helpful to include some in the final tutorial. Visualizations can make complex data easier to understand and can help learners better understand the concepts being taught.
+- The use of alerts to highlight important information is helpful. However, the content of these alerts is sometimes too technical and difficult to understand. Simplifying the language or providing more context would make these alerts more effective.
 
-5. **Practical Application:** The tutorial does a good job of explaining how to calculate a static, delay-adjusted estimate of disease severity, but it does not provide any practical applications of this knowledge. Including a section on how this information can be used in the real world would make the tutorial more relevant and interesting.
+- The references to other vignettes, such as the "Get started" vignette and the vignette on delay distributions, are useful for further learning. However, it would be helpful to have direct links to these vignettes for easy access.
 
-6. **Additional Resources:** The tutorial could benefit from a list of additional resources for learners who want to learn more about the topic. This could include links to relevant research papers, online courses, or other tutorials.
+Suggestions for improvements:
 
-In summary, the tutorial is informative and relevant, but could be improved by explaining jargon and code, providing data sources, including visualizations, discussing practical applications, and providing additional resources.
+- Provide more background information or context about the real-world examples used in the vignette.
+
+- Include a glossary or explanations of technical terms and jargon used in the vignette.
+
+- Provide more explanation about what each line of code is doing to help learners understand the process better.
+
+- Simplify the language or provide more context in the alerts to make them more understandable.
+
+- Include direct links to other related vignettes for easy access.

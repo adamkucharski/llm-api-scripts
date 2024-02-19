@@ -1,15 +1,17 @@
-As Patricia, I find this tutorial quite informative and useful. It provides a clear explanation of the concept of disease severity and the case fatality risk (CFR), and how reporting delays can affect the estimation of these parameters. The use of real-world examples, such as the Ebola outbreak, makes the tutorial more relatable and easier to understand. 
+- The vignette is well-structured and provides a clear explanation of the problem it aims to solve. However, as a beginner in R and someone who is not familiar with the terminal window, the use of R code without sufficient explanation can be confusing. For example, the use of the `cfr_static()` function is not explained in detail. It would be helpful to have a brief explanation of what each argument in the function does.
 
-However, there are a few areas that could be improved:
+- The use of the `knitr::opts_chunk$set()` function is not explained. As a beginner, I would appreciate a brief explanation of what this function does and why it is necessary.
 
-- The tutorial assumes that I am familiar with certain concepts and terminologies such as "Gamma distribution", "shape", "scale", and "ascertainment ratio". As a learner, I would appreciate a brief explanation or reference to these terms for better understanding.
+- The use of the `dgamma()` function in the `delay_density` argument of the `cfr_static()` function is not explained. It would be helpful to have a brief explanation of what this function does and why it is used here.
 
-- The tutorial uses R code to demonstrate the concepts, which is great since I am learning R. However, it does not explain what each line of code does. As a beginner in R, I would appreciate some comments in the code explaining what each line does.
+- The vignette does a good job of explaining the concept of reporting delays and how they can bias CFR estimates. This is very useful for someone like me who is studying infectious disease epidemiology.
 
-- The tutorial mentions several R packages such as _cfr_, _covidregionaldata_, and _outbreaks_, but does not explain what these packages do or why they are needed. It would be helpful to provide a brief description of these packages and how they are used in the tutorial.
+- The vignette could be improved by providing more context about the data used in the examples. For example, it would be helpful to know more about the Ebola outbreak data used in the examples, such as where it came from and how it was collected.
 
-- The tutorial could be improved by providing more guidance on how to interpret the output of the R functions used. For example, what does the output of the `cfr_static()` function tell us about the disease severity?
+- The vignette could also be improved by providing more information about the packages used, such as `cfr`, `covidregionaldata`, and `outbreaks`. As a beginner, I would appreciate a brief explanation of what these packages do and why they are necessary for the analysis.
 
-- The tutorial could also include some exercises or practice problems for me to apply what I have learned. This would help reinforce the concepts and improve my understanding.
+- The use of alerts to highlight important information is very helpful. However, it would be even more helpful if these alerts were used to highlight important steps in the code or to provide tips for beginners.
 
-- Lastly, the tutorial could provide some additional resources for further learning, such as books, online courses, or tutorials on disease epidemiology or R programming.
+- The vignette could be improved by providing more examples of how to use the functions in the `cfr` package. For example, it would be helpful to see examples of how to use the `cfr_time_varying()` and `estimate_ascertainment()` functions with different types of data.
+
+- The vignette could also be improved by providing more information about how to interpret the results of the analysis. For example, it would be helpful to know what a high or low ascertainment ratio means in the context of an outbreak.
