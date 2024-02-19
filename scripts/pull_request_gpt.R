@@ -10,7 +10,7 @@ openai_api_key <- Sys.getenv("OPENAI_API_KEY")
 
 # Define repo and PR number
 owner_repo <- "epiverse-trace/simulist"
-pull_number <- 33 
+pull_number <- 73 
 
 # Fetch pull request comments
 pr_comments <- gh::gh(
