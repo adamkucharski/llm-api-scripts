@@ -1,9 +1,0 @@
-1. The tutorial is a good start for someone like Lucia who is looking to learn how to use outbreak analytics R packages. However, the tutorial lacks a clear structure and detailed content. The objectives, questions, and key points sections are left blank, which makes it difficult for Lucia to understand what she should expect to learn from the tutorial. Lucia would appreciate if these sections are filled with relevant information. 
-
-2. The prerequisites section is also left blank. Lucia needs to know what lessons or packages she needs to be familiar with before starting this tutorial. As she is not an excellent R user, she would appreciate if the prerequisites section includes links to resources where she can learn or refresh her knowledge about the required packages or lessons.
-
-3. The challenges in the tutorial are useful for Lucia to practice what she has learned. However, the tutorial lacks explanations or guidelines on how to interpret the outputs of the code. Lucia needs clear guidelines for the interpretation of Outbreak analytics package outputs, so it would be helpful if the tutorial includes explanations about the outputs of the code.
-
-4. The tutorial includes a section for additional maths or epidemiology content for novice learners. This is useful for Lucia as she needs refreshers of applied statistics and mathematics concepts. However, this section is also left blank. Lucia would appreciate if this section includes explanations or examples of how the concepts are applied in the tutorial.
-
-5. The tutorial could be improved by including case-studies per disease type. Lucia needs to identify how to translate her field experience into practice, so it would be helpful if the tutorial includes examples or case studies that are relevant to her work. The tutorial could also be improved by providing more time for Lucia to learn how to use the new outbreak analytics R packages, as she only has one evening a week to practice R.

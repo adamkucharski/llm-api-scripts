@@ -6,6 +6,10 @@ library(readr)
 # Sys.setenv(GITHUB_PAT = "GITHUB_PAT")
 # Sys.setenv(OPENAI_API_KEY = "insert_your_key")
 
+# Set local directory for outputs
+# setwd("~/Documents/GitHub/llm-api-scripts/")
+
+
 openai_api_key <- Sys.getenv("OPENAI_API_KEY")
 
 # Define repo and PR number
@@ -34,7 +38,8 @@ all_file_changes_string <- paste(pr_changed_files, collapse = "\n")
 # Set up GPT prompt for expert review and run model
 review_prompt <- "You are an expert epidemiologist and research software engineer who builds R packages for outbreak analysis.
 Provide an expert review on the following changes made in a GitHub pull request. 
-Highlight the significance of each change, suggest potential improvements, and summarise the overall impact on the project."
+Highlight the significance of each change, suggest potential improvements, and summarise the overall impact on the project.
+Focus in particular on functions, statistical concepts and markdown content"
 
 llm_completion <- create_chat_completion(
   model = "gpt-4-0125-preview", # Adjust model as necessary
@@ -44,8 +49,8 @@ llm_completion <- create_chat_completion(
   max_tokens = 1000 # Adjust based on expected output length
 )
 
-llm_completion_content <- llm_completion$choices[[1]]$message$content
+llm_completion_content <- llm_completion$choices$message.content
 
 # Write markdown file with the review
-writeLines(llm_completion_content, paste0("outputs/review_output_",owner_repo,"_",pull_number,".md"))
+writeLines(llm_completion_content, paste0("outputs/review_output_",strsplit(owner_repo, "/")[[1]][2],"_",pull_number,".md"))
 

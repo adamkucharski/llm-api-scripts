@@ -11,6 +11,10 @@ library(readr)
 
 openai_api_key <- Sys.getenv("OPENAI_API_KEY")
 
+# Set GitHub repository and path
+owner_repo <- "epiverse-trace/tutorials-middle" #"tutorials"
+path <- "episodes" #"episodes"
+
 # Load personas
 persona_vania_academic <- read_file("https://raw.githubusercontent.com/epiverse-trace/personas/master/vania-academica.qmd")
 persona_lucia_field_epi <- read_file("https://raw.githubusercontent.com/epiverse-trace/personas/master/lucia-outbreaks.qmd")
@@ -48,9 +52,6 @@ download_rmd_content <- function(download_urls) {
   })
 }
 
-# GitHub repository and path
-owner_repo <- "epiverse-trace/tutorials-middle" # Replace X with the actual GitHub username
-path <- "episodes"
 
 # Get list of .Rmd files
 rmd_files_info <- get_rmd_files(owner_repo, path)
@@ -68,13 +69,19 @@ user_prompt_2 <- read_file("prompts/review_prompt.txt")
 # Loop over personas and tutorials
 for(ii in 1:length(rmd_contents)){
 for (kk in 1:length(persona_names)){
-
+  
+  # Create directory if needed
+  file_path <- paste0("outputs/",owner_repo,"/")
+  if(!dir.exists(file_path)){dir.create(file_path)}
+  
+  # Define loop variables
   tutorial_name <- sub("\\.Rmd$", "",rmd_files_info$names[ii])
   tutorial_contents <- rmd_contents[ii]
   
   persona_name <- persona_names[kk]
   persona_bio <- persona_bio_list[kk]
   
+  # OpenAI GPT call
   llm_completion <- create_chat_completion(
     model = "gpt-4", #gpt-3.5-turbo-0125
     messages = list(list("role"="user","content" = paste0(user_prompt_1,persona_bio,
@@ -88,7 +95,7 @@ for (kk in 1:length(persona_names)){
   llm_completion_content <- llm_completion$choices$message.content
   
   # Write markdown file
-  write_lines(llm_completion_content,paste0("outputs/review_",tutorial_name,"_persona_",persona_name,".md"))
+  write_lines(llm_completion_content,paste0(file_path,"review_",tutorial_name,"_persona_",persona_name,".md"))
 
 }
 }
