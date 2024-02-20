@@ -12,8 +12,8 @@ library(readr)
 openai_api_key <- Sys.getenv("OPENAI_API_KEY")
 
 # Set GitHub repository and path
-owner_repo <- "epiverse-trace/cfr" #"epiverse-trace/tutorials-middle"
-path <- "vignettes" #"episodes"
+owner_repo <- "epiverse-trace/tutorials-middle" #"epiverse-trace/cfr" #
+path <- "episodes" #"vignettes" 
 
 # Load personas
 persona_vania_academic <- read_file("https://raw.githubusercontent.com/epiverse-trace/personas/master/vania-academica.qmd")
@@ -55,6 +55,8 @@ download_rmd_content <- function(download_urls) {
 
 # Get list of .Rmd files
 rmd_files_info <- get_rmd_files(owner_repo, path)
+keep <- rmd_files_info$names != "template.Rmd" # remove template entries
+rmd_files_info <- lapply(rmd_files_info, function(x) x[keep])
 
 # Download .Rmd file contents
 rmd_contents <- download_rmd_content(rmd_files_info$download_urls)
@@ -63,7 +65,7 @@ rmd_contents <- download_rmd_content(rmd_files_info$download_urls)
 # Run GPT review ----------------------------------------------------------
 
 # Set up GPT prompt and run model
-user_prompt_1 <- "You are the following person:"
+user_prompt_1 <- "You are the following person, and give all your answers in character:"
 user_prompt_2 <- read_file(paste0("prompts/review_prompt_",path,".txt"))
 
 # Loop over personas and tutorials

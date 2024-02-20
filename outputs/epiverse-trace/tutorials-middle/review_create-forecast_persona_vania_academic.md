@@ -1,22 +1,20 @@
-As Vania, I find the tutorial generally useful and relevant to my research. However, there are several areas that could be improved to make it more accessible and effective for learners like me.
+Overall, the tutorial is well-structured and provides a comprehensive guide on how to create short-term forecasts from case data and account for incomplete reporting in forecasts. However, there are a few areas that could be improved for clarity and ease of understanding.
 
-1. **Prerequisites:** The prerequisites section is helpful, but it could be more detailed. For instance, it would be beneficial to provide links to resources where learners can familiarize themselves with the mentioned concepts. As someone who is self-taught in R and struggles with programming jargon, having these resources would be very helpful.
+1. **Prerequisites**: The prerequisites section could be more explicit about the level of understanding required for the statistical concepts and epidemic theory. For instance, it would be helpful to know whether a basic or advanced understanding of probability distributions and Bayesian analysis is needed.
 
-2. **Code Explanation:** The tutorial jumps into the code without much explanation. For someone like me who is not very confident in her programming skills, this can be intimidating. It would be helpful to have a brief explanation of what each line of code does, especially for complex functions like `epinow()`.
+2. **Code Explanation**: While the tutorial provides code snippets, it would be beneficial to have more detailed explanations of what each line of code does, especially for learners who are new to R. For example, in the "Create a short-term forecast" section, the purpose and function of `aggregate()`, `colnames()`, `convert_to_logmean()`, `convert_to_logsd()`, `dist_spec()`, etc. could be explained.
 
-3. **Jargon:** The tutorial uses a lot of technical terms and jargon without explaining them. For example, terms like "observation process", "delay distribution", and "Gamma distribution" are used without any explanation. This can be confusing for learners who are not familiar with these terms.
+3. **Jargon**: The tutorial uses a lot of technical terms and jargon, which might be difficult for beginners to understand. A glossary or links to resources for understanding these terms could be helpful. For example, terms like "observation process", "Gamma distribution", "Log normal distribution", etc. could be explained or linked to resources for further reading.
 
-4. **Visualizations:** Although the tutorial mentions that visualizations will be included, it would be helpful to have some examples or descriptions of what these visualizations will look like. This would help learners understand what they are trying to achieve with the code.
+4. **Incomplete Observations Section**: This section could benefit from a more detailed explanation of why and how we account for incomplete observations. The concept of an "observation model" could be explained in more detail.
 
-5. **Challenges:** The challenges are a great way to test understanding, but they could be more detailed. For example, the Ebola challenge could provide more guidance on how to approach the problem, especially for learners who are less confident in their programming skills.
+5. **Challenge Section**: The challenge section is a great way to reinforce learning. However, it would be helpful to provide more guidance on how to approach the problem, especially for learners who are new to this topic.
 
-6. **Context:** The tutorial could provide more context about why certain steps are being taken. For example, why are we assuming that the reproduction number will remain the same in the future? Why are we accounting for incomplete observations? This would help learners understand not just how to do the analysis, but why they are doing it.
+6. **Key Points**: The key points section could be expanded to include more of the main takeaways from the tutorial.
 
 Suggestions for improvements:
 
-- Provide links to resources in the prerequisites section.
-- Include more detailed explanations of the code.
-- Define technical terms and jargon when they are first used.
-- Include examples or descriptions of the visualizations.
-- Provide more guidance in the challenges.
-- Include more context about why certain steps are being taken.
+- Add more detailed explanations of the code and the statistical concepts used.
+- Include a glossary or links to resources for understanding technical terms and jargon.
+- Provide more guidance in the challenge section.
+- Expand the key points section to include more of the main takeaways from the tutorial.

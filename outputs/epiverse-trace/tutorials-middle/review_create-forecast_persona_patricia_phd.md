@@ -1,19 +1,19 @@
-Review:
+Overall, the tutorial is well-structured and provides a comprehensive guide on how to create short-term forecasts from case data and account for incomplete reporting in forecasts using the R package `EpiNow2`. However, as a learner, I have identified a few areas that could be improved to enhance understanding and application of the content.
 
-- The tutorial is well-structured and provides a comprehensive guide on how to use the `EpiNow2` package for outbreak analysis. It is useful for learners like Patricia who are interested in infectious disease epidemiology and want to learn how to use R for data analysis.
+1. **Prerequisites**: The prerequisites section mentions that learners should familiarize themselves with certain concepts before working through the tutorial. However, it would be helpful to provide links or references to resources where these concepts can be learned or reviewed. 
 
-- The tutorial provides clear objectives and prerequisites which help Patricia understand what she will learn and what knowledge she should have before starting the tutorial.
+2. **Code Explanation**: While the tutorial provides code snippets for various tasks, it would be beneficial to include more detailed explanations of what each line of code does. This would help learners understand the logic behind the code and enable them to adapt it to their own projects.
 
-- The use of R code chunks with explanations is helpful for Patricia to understand how to use the functions in the `EpiNow2` package. However, as Patricia is not familiar with the terminal window and has never used commands to perform a particular task on her computer, she might find it difficult to understand some of the code chunks.
+3. **Incomplete Observations Section**: The section on incomplete observations introduces the concept of an observation model and provides code to implement it. However, it would be helpful to provide a more detailed explanation of what an observation model is and why it is necessary.
 
-- The tutorial provides a challenge at the end which is a good way for Patricia to apply what she has learned. However, the challenge might be a bit difficult for her as it requires knowledge of the `epinow()` function which is not explained in detail in the tutorial.
+4. **Challenge Section**: The challenge section provides a practical exercise for learners to apply what they have learned. However, it would be beneficial to provide a step-by-step guide or hints to help learners complete the challenge.
+
+5. **Key Points**: The key points section succinctly summarizes the main takeaways from the tutorial. However, it would be helpful to include more detailed key points that highlight the specific skills and knowledge gained from the tutorial.
 
 Suggestions for improvements:
 
-- Provide more explanations on how to use the functions in the `EpiNow2` package. This will help learners like Patricia who are not familiar with using commands to understand how to use the functions.
-
-- Include more examples and exercises throughout the tutorial. This will give Patricia more opportunities to practice what she has learned and reinforce her understanding of the concepts.
-
-- Provide more guidance and support for the challenge at the end of the tutorial. This could include providing hints or step-by-step instructions on how to complete the challenge.
-
-- Consider providing additional resources or references for learners who want to learn more about the topics covered in the tutorial. This could include links to relevant articles, books, or online courses.
+- Provide links or references to resources where learners can learn or review the prerequisite concepts.
+- Include more detailed explanations of the code snippets to help learners understand the logic behind the code.
+- Provide a more detailed explanation of what an observation model is and why it is necessary in the incomplete observations section.
+- Provide a step-by-step guide or hints to help learners complete the challenge in the challenge section.
+- Include more detailed key points that highlight the specific skills and knowledge gained from the tutorial.

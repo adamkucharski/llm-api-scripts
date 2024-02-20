@@ -1,35 +1,22 @@
-- The tutorial is very comprehensive and covers a lot of ground. It is well-structured and the use of callouts to explain key concepts is very helpful. However, as a learner who is not familiar with the terminal window and has never used commands to perform a particular task on her computer, the tutorial might be a bit overwhelming. 
+The tutorial is well-structured and provides a comprehensive guide on how to estimate key transmission metrics from a time series of case data using the R package `EpiNow2`. It also explains how to quantify geographical heterogeneity in these metrics. The tutorial is rich with examples and code snippets, which makes it easier to follow along. However, there are a few areas that could be improved to enhance the learning experience.
 
-- The tutorial assumes a certain level of familiarity with R and statistical concepts, which might be challenging for someone who is still learning how to translate theory to practice with R. 
+1. **Unclear prerequisites**: The prerequisites section mentions that learners should familiarize themselves with certain statistical and epidemiological concepts. However, it does not provide any resources or references for these concepts. It would be helpful to include links to resources where these concepts are explained in detail.
 
-- The tutorial does not provide any exercises for learners to practice the concepts learned. This could be a potential area of improvement as it would provide an opportunity for learners to apply what they have learned and reinforce their understanding.
+2. **Complex statistical concepts**: The tutorial introduces several complex statistical concepts such as Bayesian inference, gamma distribution, and lognormal distribution. These concepts might be difficult for learners who do not have a strong background in statistics. It would be beneficial to provide a more detailed explanation of these concepts or include links to resources where learners can learn more about them.
 
-- The tutorial could also benefit from more explanations on why certain steps are being taken. For instance, why is the `withr::local_options(list(mc.cores = 4))` command being used? What does it do? 
+3. **Lack of exercises**: The tutorial does not include any exercises or practice problems. Including exercises would provide learners with an opportunity to apply what they have learned and reinforce their understanding of the material.
 
-- The tutorial could also provide more guidance on how to interpret the results. For instance, what does it mean if the effective reproduction number $R_t$ is greater than 1? 
+4. **Verbose code snippets**: Some of the code snippets are quite long and complex. It would be helpful to break down these code snippets into smaller parts and explain each part in detail.
 
-- The tutorial could also provide more context on the data being used. For instance, what does the `incidence2::covidregionaldataUK` dataset represent? 
+5. **Lack of explanation for certain code snippets**: Some code snippets are not explained at all. For example, the code snippet that uses the `aggregate` function to format the data is not explained. It would be helpful to provide a brief explanation of what each code snippet does.
 
-- The tutorial could also provide more guidance on how to choose the appropriate delay distributions. For instance, when should a fixed distribution be used versus a variable distribution? 
+6. **Use of jargon**: The tutorial uses several technical terms and jargon that might be difficult for learners to understand. It would be helpful to define these terms when they are first introduced.
 
-- The tutorial could also provide more guidance on how to choose the appropriate prior for the effective reproduction number $R_t$. 
+Suggestions for improvements:
 
-- The tutorial could also provide more guidance on how to interpret the `Expected change in daily cases` table. For instance, what does it mean if the expected change is "Increasing"? 
-
-- The tutorial could also provide more guidance on how to interpret the regional estimates. For instance, what does it mean if the effective reproduction number $R_t$ varies significantly between regions? 
-
-- The tutorial could also provide more guidance on how to interpret the growth rate estimate. For instance, what does it mean if the growth rate is positive versus negative? 
-
-- The tutorial could also provide more guidance on how to interpret the doubling time. For instance, what does it mean if the doubling time is short versus long? 
-
-- The tutorial could also provide more guidance on how to interpret the summary of the analysis. For instance, what does it mean if the expected change in daily cases is "Increasing" but the effective reproduction number $R_t$ is less than 1? 
-
-- The tutorial could also provide more guidance on how to interpret the `estimates$plots$R` and `estimates$plots$growth_rate` plots. For instance, what does it mean if the effective reproduction number $R_t$ is increasing over time? What does it mean if the growth rate is decreasing over time? 
-
-- The tutorial could also provide more guidance on how to interpret the `estimates_regional$summary$summarised_results$table` and `estimates_regional$summary$plots$R` plots. For instance, what does it mean if the effective reproduction number $R_t$ varies significantly between regions? 
-
-- The tutorial could also provide more guidance on how to interpret the `summary(estimates)` output. For instance, what does it mean if the expected change in daily cases is "Increasing" but the effective reproduction number $R_t$ is less than 1? 
-
-- The tutorial could also provide more guidance on how to interpret the `estimates$plots$R` and `estimates$plots$growth_rate` plots. For instance, what does it mean if the effective reproduction number $R_t$ is increasing over time? What does it mean if the growth rate is decreasing over time? 
-
-- The tutorial could also provide more guidance on how to interpret the `estimates_regional$summary$summarised_results
+- Include links to resources where learners can learn more about the prerequisites.
+- Provide a more detailed explanation of complex statistical concepts or include links to resources where learners can learn more about them.
+- Include exercises or practice problems to reinforce learners' understanding of the material.
+- Break down complex code snippets into smaller parts and explain each part in detail.
+- Provide a brief explanation of what each code snippet does.
+- Define technical terms and jargon when they are first introduced.
