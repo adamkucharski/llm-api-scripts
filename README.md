@@ -17,8 +17,8 @@ Sys.setenv(OPENAI_API_KEY = "insert_your_key")
 # Run GPT
 openai_api_key <- Sys.getenv("OPENAI_API_KEY")
 
-system_prompt <- "insert_system_prompt"
-user_prompt <- "insert_user_prompt"
+system_prompt <- "You are a tour guide who is accurate but entertaining"
+user_prompt <- "Tell me 3 unexpected facts about London"
 
 llm_completion <- create_chat_completion(
                   model = "gpt-3.5-turbo", 
@@ -48,7 +48,7 @@ write_lines(llm_completion_content,"llm_output.md"))
 
 You can apply for API access to Claude on the [Anthropic website](https://www.anthropic.com/earlyaccess).
 
-The below shows code using the [{claudeR} R package](https://github.com/yrvelez/claudeR).
+The below shows code using Claude 2 the [{claudeR} R package](https://github.com/yrvelez/claudeR).
 
 ```
 if(!require("pak")) install.packages("pak")
@@ -59,12 +59,23 @@ library(claudeR)
 Sys.setenv(ANTHROPIC_API_KEY = "insert_your_key")
 
 # Run Claude
-anthropic_key <- Sys.getenv("OPENAI_API_KEY")
+anthropic_key <- Sys.getenv("ANTHROPIC_API_KEY")
 
 llm_completion <- claudeR(
-                      prompt = "insert_user_prompt",
+                      prompt = "Tell me 3 unexpected facts about London",
                       model = "claude-2",
                       max_tokens = 100,
                       api_key = anthropic_key
 )
 ```
+If you'd like to use one of the [new Claude 3 models](https://docs.anthropic.com/claude/docs/models-overview), just choose `claude-3-opus-20240229` (best, slower) or `claude-3-sonnet-20240229` (good, faster) instead:
+
+```
+llm_completion <- claudeR(
+                      prompt = "Tell me 3 unexpected facts about London",
+                      model = "claude-3-sonnet-20240229",
+                      max_tokens = 100,
+                      api_key = anthropic_key
+)
+```
+
