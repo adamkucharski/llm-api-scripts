@@ -1,5 +1,5 @@
 # llm-api-scripts
-Here are some scripts for interface with common LLM APIs in R
+This repo includes some quick scripts for interface with common LLM APIs in R (see below) as well as some *in development* tasks in the repo folders.
 
 ## OpenAI GPT-3.5 and GPT-4
 
