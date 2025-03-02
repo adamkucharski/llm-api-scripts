@@ -1,6 +1,8 @@
 # llm-api-scripts
 This repo includes some quick scripts for interface with common LLM APIs in R (see below) as well as some *in development* tasks in the repo folders.
 
+**Note: The [{ellmer} package](https://ellmer.tidyverse.org/) now has much better supported API functions, so would recommend using this rather than the below packages.**
+
 ## OpenAI GPT-3.5 and GPT-4
 
 You can get an API key on the [OpenAI platform website](https://platform.openai.com/docs/introduction).
