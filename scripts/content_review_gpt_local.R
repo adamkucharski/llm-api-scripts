@@ -33,7 +33,7 @@ read_qmd_content <- function(file_paths) {
 # Set up GPT prompts
 system_prompt <- "You are a content reviewer specializing in technical documentation. Your task is to identify typos and ambiguities in the provided content. Provide your feedback in a clear, bullet-point format."
 
-user_prompt_template <- "Please review the following .qmd teaching content, which will be rendered to HTML and .DOC, so comments etc. will not appear.
+user_prompt_template <- "Please review the following .qmd teaching content, which will be rendered to HTML and DOC.
 
 Output a summary list of required changes. 
 Pay particular attention to:
