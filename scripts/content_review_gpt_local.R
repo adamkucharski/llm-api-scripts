@@ -14,7 +14,7 @@ get_local_qmd_files <- function(folder_path) {
   folder_path <- path_expand(folder_path)
   
   # Get all .qmd files
-  qmd_files <- dir_ls(folder_path, regexp = "\\.qmd$")
+  qmd_files <- dir_ls(folder_path, regexp = "\\.Rmd$")
   
   # Return list of file paths and names
   list(
@@ -33,21 +33,22 @@ read_qmd_content <- function(file_paths) {
 # Set up GPT prompts
 system_prompt <- "You are a content reviewer specializing in technical documentation. Your task is to identify typos and ambiguities in the provided content. Provide your feedback in a clear, bullet-point format."
 
-user_prompt_template <- "Please review the following .qmd teaching content, which will be rendered to HTML and DOC.
+user_prompt_template <- "Please review the following .Rmd teaching content.
 
 Output a summary list of required changes. 
 Pay particular attention to:
 1. Any typos or grammatical errors
 2. Any ambiguous statements or unclear explanations
 3. Any technical inconsistencies
+4. Any epidemiological inaccuracies or imprecision
 
-Note that there are some placeholders for learners to input their answers.
+Note that there are some placeholders, e.g. '<COMPLETE>', for learners to input their answers.
 
 Content to review:
 "
 
 # Get list of .qmd files from local directory
-folder_path <- "~/Documents/GitHub/epiverse-trace/tutorials/instructors/" # Default path, can be changed
+folder_path <- "~/Documents/GitHub/epiverse-trace/tutorials-late/episodes/" # Default path, can be changed
 qmd_files_info <- get_local_qmd_files(folder_path)
 
 # Read .qmd file contents
